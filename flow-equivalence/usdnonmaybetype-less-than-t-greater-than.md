@@ -1,0 +1,2 @@
+# $NonMaybeType&lt;T&gt;
+
