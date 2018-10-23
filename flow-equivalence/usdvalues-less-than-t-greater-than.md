@@ -1,2 +1,0 @@
-# $Values&lt;T&gt;
-

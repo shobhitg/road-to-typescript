@@ -1,2 +1,0 @@
-# $ReadOnly&lt;T&gt;
-

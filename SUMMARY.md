@@ -4,9 +4,9 @@
 
 ## Flow Equivalence
 
-* [$Keys&lt;T&gt;](flow-equivalence/usdkeys-less-than-t-greater-than.md)
-* [$Values&lt;T&gt;](flow-equivalence/usdvalues-less-than-t-greater-than.md)
-* [$ReadOnly&lt;T&gt;](flow-equivalence/usdreadonly-less-than-t-greater-than.md)
+* [$Keys&lt;T&gt;](flow-equivalence/toc-keys.md)
+* [$Values&lt;T&gt;](flow-equivalence/toc-values.md)
+* [$ReadOnly&lt;T&gt;](flow-equivalence/toc-readonly.md)
 * [$Exact&lt;T&gt;](flow-equivalence/usdexact-less-than-t-greater-than.md)
 * [$Diff&lt;A, B&gt;](flow-equivalence/usddiff-less-than-a-b-greater-than.md)
 * [$PropertyType&lt;T, k&gt;](flow-equivalence/usdpropertytype-less-than-t-k-greater-than.md)
