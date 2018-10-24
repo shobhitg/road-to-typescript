@@ -23,7 +23,23 @@ function render(props: ReadOnlyProps) {
 }
 ```
 
-Typescript equivalent example \([playground](https://www.typescriptlang.org/play/index.html#src=%2F%2F%20Readonly%20is%20now%20an%20inbuilt%20typescript%20feature%0D%0A%2F%2F%20type%20Readonly%3CT%3E%20%3D%20%7B%20%2F%2F%20%24Readonly%3CT%3E%0D%0A%2F%2F%20%20%20%20%20readonly%20%5BP%20in%20keyof%20T%5D%3A%20T%5BP%5D%0D%0A%2F%2F%20%7D%0D%0A%0D%0Atype%20Props%20%3D%20%7B%0D%0A%20%20name%3A%20string%2C%0D%0A%20%20age%3A%20number%2C%0D%0A%20%20%2F%2F%20...%0D%0A%7D%0D%0A%0D%0Atype%20ReadOnlyProps%20%3D%20Readonly%3CProps%3E%0D%0A%0D%0Afunction%20render%28props%3A%20ReadOnlyProps%29%20%7B%0D%0A%20%20const%20%7Bname%2C%20age%7D%20%3D%20props%20%2F%2F%20OK%20to%20read%0D%0A%20%20props.age%20%3D%2042%20%2F%2F%20Error%20when%20writing%0D%0A%7D)\):
+Typescript equivalent example \([playground](https://www.typescriptlang.org/play/index.html#src=%2F%2F%20Readonly%20is%20now%20an%20inbuilt%20typescript%20feature
+%2F%2F%20type%20Readonly<T>%20%3D%20{%20%2F%2F%20%24Readonly<T>
+%2F%2F%20%20%20%20%20readonly%20[P%20in%20keyof%20T]%3A%20T[P]
+%2F%2F%20}
+
+type%20Props%20%3D%20{
+%20%20name%3A%20string%2C
+%20%20age%3A%20number%2C
+%20%20%2F%2F%20...
+}
+
+type%20ReadOnlyProps%20%3D%20Readonly<Props>
+
+function%20render%28props%3A%20ReadOnlyProps%29%20{
+%20%20const%20{name%2C%20age}%20%3D%20props%20%2F%2F%20OK%20to%20read
+%20%20props.age%20%3D%2042%20%2F%2F%20Error%20when%20writing
+})\):
 
 {% hint style="info" %}
 [Readonly](https://basarat.gitbooks.io/typescript/docs/types/readonly.html) is an inbuilt feature in typescript.
@@ -43,6 +59,4 @@ function render(props: ReadOnlyProps) {
   props.age = 42 // Error when writing
 }
 ```
-
-
 

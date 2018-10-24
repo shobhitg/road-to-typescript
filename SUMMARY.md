@@ -22,7 +22,7 @@
 
 ## Advanced Usecases
 
-* [MapTuples](usecases/maptuples.md)
-* [Differentiated Unions](usecases/differentiated-unions.md)
-* [Conditional Types](usecases/conditional-types.md)
+* [MapTuples](advanced-usecases/maptuples.md)
+* [Differentiated Unions](advanced-usecases/differentiated-unions.md)
+* [Conditional Types](advanced-usecases/conditional-types.md)
 
