@@ -1,4 +1,0 @@
-# $Supertype&lt;T&gt;
-
-
-

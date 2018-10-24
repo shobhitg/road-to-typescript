@@ -16,8 +16,6 @@
 * [$TupleMap&lt;T, F&gt;](flow-equivalence/toc-tuplemap.md)
 * [$Call&lt;F&gt;](flow-equivalence/toc-call.md)
 * [$Shape&lt;T&gt;](flow-equivalence/toc-shape.md)
-* [$Supertype&lt;T&gt;](flow-equivalence/toc-supertype.md)
-* [$Subtype&lt;T&gt;](flow-equivalence/toc-subtype.md)
 * [Existential Type \(\*\)](flow-equivalence/existential-type.md)
 
 ## Advanced Usecases
