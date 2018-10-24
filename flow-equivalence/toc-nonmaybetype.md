@@ -1,8 +1,8 @@
 # $NonMaybeType&lt;T&gt;
 
-The `$NonMaybeType<T>` helper removes `null` and `undefined` from a type.
+The [`$NonMaybeType<T>`](https://flow.org/en/docs/types/utilities/#toc-nonmaybe) helper removes `null` and `undefined` from a type.
 
-TypeScript can achieve this by using the built in `Exclude<T, U>` type that removes types from `T` that are assignable to `U`.
+TypeScript can achieve this by using the built in [`Exclude<T, U>`](https://www.typescriptlang.org/docs/handbook/advanced-types.html#predefined-conditional-types) type that removes types from `T` that are assignable to `U`.
 
 Flow example ([playground](https://flow.org/try/#0PTAEAEDMBsHsHcBQAXAngBwKagLIENUAjTAOTwFtsBeUAfgGdkAnASwDsBzAbhQ2zMqgaAEhKw2+IpgAqfADyTiAzAD4eiABQByAOJ5CrTNC0AuXASUVMASi6gQoAPIBrTWwCu0aGcWkrt+zAXTV19Q2MzZQCHYI0PL0j-OwcAUSYmWCYAQlB46FAAYzw2LWRQYlBitlhkPGRMABNK+lBlcswi93p+K1AWFuqyvFByC2w0LCA))
 
