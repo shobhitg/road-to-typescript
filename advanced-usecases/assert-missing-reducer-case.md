@@ -1,7 +1,8 @@
 # Assert if a reducer case is missing by accident
 
 Typescript example ([playground](https://agentcooper.github.io/typescript-play/#code/GYVwdgxgLglg9mABAQwM6oKYCcoDkMBu2AFHAEYBWAXImIdgJQ11FaIDeAUIolABZY4Ad1oYRAUSyCsxAESTpshgG5OAX06cYYKNmDIIGRAGUAjiGRYjXHgGttAExqzU5yxlmqeqGAC8MzCAAtmTYqhraulj6hogAShjQyGAA5gA21tyI9mBOiLJWSakZnllCMA78gSFhWXwYMCl8UNWhWOFaOnoGRgDCMFgQGRxZOXmyEANDHl6IWMgOMCCorbUanFAAngAORsZ8yLuIALwmblaIAD7xiVDJ6UbX-YMZqpygkLAIKFbICQ4gQwyFYmA67BgjbzlKAQPiIYioAB0YwhNh4iAgaCMLnOHioWXRcwwUBAWCQSJ8-kQACpEBS-BhZjxMZh8oU7sU8QT0VYSWS6Yj6o1mjSBeVKnwmYgAPTSjFY-KTF5cwmywlEvlIACyyH4iIACgBJUVI+aLZY02kAJilDgw+hAaRa3J4aEwOHwrARKiyGh4vNJ5I6QA))
-```typesript
+
+```typescript
 function assertNever(obj: never): never {
   throw new Error("Error");
 }
