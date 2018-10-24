@@ -25,4 +25,6 @@
 * [MapTuples](advanced-usecases/maptuples.md)
 * [Differentiated Unions](advanced-usecases/differentiated-unions.md)
 * [Conditional Types](advanced-usecases/conditional-types.md)
+* [Deep Readonly](advanced-usecases/deep-readonly.md)
+* [Assert if a reducer case is missing by accident](advanced-usecases/assert-missing-reducer-case.md)
 
