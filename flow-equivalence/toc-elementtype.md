@@ -63,3 +63,24 @@ const first: ElementType<Tuple, 0> = true;
 const second: ElementType<Tuple, 1> = 'foo';
 const fail3: ElementType<Tuple, 2> = 'bar'; // Nope, can't access position 2
 ```
+
+While the above `TupleElementType<T, K>` is convenient, in that it allows accessing tuple elements with numeric literal types, TypeScript represents tuples as having literal numeric-strings as keys (`keyof [string] === keyof any[] | '0'`). If numeric strings are used to index tuple types, the `TupleElementType<T, K>` can be improved.
+
+TypeScript example ([playground](https://agentcooper.github.io/typescript-play/#code/C4TwDgpgBAKgrmANhAosgthAdsG4IA8MUEAHsNgCYDOUAhliANoC6ANFANIB8UAvACgowriXJVaKUgGNEcSoQDWEEAHsAZrA7K1mhsxa8A-LCacWUAFxQA9DdF8oAcgAMTqAB9nARndeAdIFCIlKy8oRYcOgARhAAThw8YhRYNFBYEABu8VAmMEyRMfEW1nYO6VGxccHCGdnVAqCQUGgQmDh4kESJvIIisMkS9IysubAIyK3tuPjdXLyWNaJkKWk6GgN5ZiVLdfECjfjjSNCOTNGqqsgMHNTAcQCWWADmLADcAtKqWHdQ6g9xO7WKbYGZdeAnDiuJy9KD3OAQN62ewAOVUFGsAHVoNIGE5gFA4NRoCCOrMIcgOC5uJ9vr9iV9UsCMKDOoQKRAob5YU51JcnB9Gb91HQHohmW1WeSJpznAAmGH8ZzROhxAXIqBoyAcXFYfH0aTSCDUWhgVTUB7AB7fKBygRAA))
+
+```typescript
+type TupleElementType<T extends any[], K> =
+    K extends Exclude<keyof T, keyof any[]> ? T[K] : // K = '0' | '1' | ...
+    Exclude<number, K> extends never ? T[number] : // K = number
+    never
+
+type ElementType<T, K> =
+    T extends any[] ? TupleElementType<T, K> :
+    K extends keyof T ? T[K] :
+    never
+
+type Tuple = [boolean, string];
+const first: ElementType<Tuple, '0'> = true; // Note: We can't use ElementType<Tuple, 0>
+const second: ElementType<Tuple, '1'> = 'foo';
+const fail: ElementType<Tuple, '2'> = 'bar'; // Nope, can't access position 2
+```
