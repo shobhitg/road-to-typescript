@@ -65,9 +65,7 @@ TypeScript example 2 ([playground](https://agentcooper.github.io/typescript-play
 ```typescript
 type PromiseResult<T> = T extends PromiseLike<infer R> ? R : T
 
-declare function props<O extends { [key: string]: any }>(promises: O): Promise<{
-  [K in keyof O]: PromiseResult<O[K]>
-}>;
+declare function props<O extends { [key: string]: any }>(promises: O): Promise<{ [K in keyof O]: PromiseResult<O[K]>}>;
 
 const promises = { a: Promise.resolve(42) };
 props(promises).then(o => {
