@@ -22,7 +22,7 @@ const italy: Country = 'IT';
 const nope: Country = 'nope'; // 'nope' is not a Country
 ```
 
-TypeScript example with an enum ([playground](https://agentcooper.github.io/typescript-play/#code/MYewdgzgLgBKCuYoCcCWBTCMC8MDeAUDDAKoDKAXDAEQlipToAmMZUAhoxNQDREwBJACpVqAjgBsAnr34AxAEqi5ydmGDpqBAL4ECUKQAd0MAMIhEKKThgBrdFJAAzGAePO4FpGkx7QkWAZ2aSpzS2RrXAByYSiAbgJ-aBgwEGNQrysbKNTjeJgAegKYHLT0KJhULFTYdjNMiKA))
+TypeScript example with an object ([playground](https://agentcooper.github.io/typescript-play/#code/MYewdgzgLgBKCuYoCcCWBTCMC8MDeAUDDAKoDKAXDAEQlipToAmMZUAhoxNQDREwBJACpVqAjgBsAnr34AxAEqi5ydmGDpqBAL4ECUKQAd0MAMIhEKKThgBrdFJAAzGAePO4FpGkx7QkWAZ2aSpzS2RrXAByYSiAbgJ-aBgwEGNQrysbKNTjeJgAegKYHLT0KJhULFTYdjNMiKA))
 
 ```typescript
 const countries = {
