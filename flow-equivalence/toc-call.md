@@ -2,7 +2,7 @@
 
 Flow's [`$Call<F>`](https://flow.org/en/docs/types/utilities/#toc-call) takes a function type and calls it, returning the resulting type.
 
-This functionality does not have a one-to-one mapping in TypeScript. However, TypeScript's [conditional types](../advanced-usecases/conditional-types.md) provide an alternative which matches Flow's `$Call<F>` in flexibility in most cases.
+This functionality does not have a one-to-one mapping in TypeScript. However, TypeScript's [conditional types](../advanced-use-cases/conditional-types.md) provide an alternative which matches Flow's `$Call<F>` in flexibility in most cases.
 
 The one case in which Flow's `$Call<F>` is definitively more useful than TypeScript's conditional types is when dealing with generic functions. Example 4 shows a case where Flow does not require writing a separate type, but TypeScript cannot produce the desired type from the function type.
 

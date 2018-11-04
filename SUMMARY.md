@@ -18,11 +18,11 @@
 * [$Shape&lt;T&gt;](flow-equivalence/toc-shape.md)
 * [Existential Type \(\*\)](flow-equivalence/existential-type.md)
 
-## Advanced Usecases
+## Advanced Use Cases
 
-* [MapTuples](advanced-usecases/maptuples.md)
-* [Differentiated Unions](advanced-usecases/differentiated-unions.md)
-* [Conditional Types](advanced-usecases/conditional-types.md)
-* [Deep Readonly](advanced-usecases/deep-readonly.md)
-* [Assert if a reducer case is missing by accident](advanced-usecases/assert-missing-reducer-case.md)
+* [MapTuples](advanced-use-cases/maptuples.md)
+* [Differentiated Unions](advanced-use-cases/differentiated-unions.md)
+* [Conditional Types](advanced-use-cases/conditional-types.md)
+* [Deep Readonly](advanced-use-cases/deep-readonly.md)
+* [Assert if a reducer case is missing by accident](advanced-use-cases/assert-missing-reducer-case.md)
 
